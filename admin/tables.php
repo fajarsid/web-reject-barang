@@ -1,3 +1,7 @@
+<?php
+    require 'function.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -25,19 +29,19 @@
         <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
           <div class="sb-sidenav-menu">
             <div class="nav">
-              <a class="nav-link" href="index.html">
+              <a class="nav-link" href="index.php">
                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                 Dashboard
               </a>
-              <a class="nav-link" href="tables.html">
+              <a class="nav-link" href="tables.php">
                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                 Data Barang
               </a>
-              <a class="nav-link" href="charts.html">
+              <a class="nav-link" href="charts.php">
                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                 Charts
               </a>
-              <a class="nav-link" href="logout.html">
+              <a class="nav-link" href="../logout.php">
                 <div class="sb-nav-link-icon"><i class="fas fa-sign-out-alt"></i></div>
                 Logout
               </a>
@@ -54,59 +58,15 @@
               <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
               <li class="breadcrumb-item active">Data Barang</li>
             </ol>
-            <div class="card mb-4">
-              <div class="card-body">
-                DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the
-                <a target="_blank" href="https://datatables.net/">official DataTables documentation</a>
-                .
-              </div>
-            </div>
-
+            
             <!-- Tabel -->
             <div class="card mb-4">
               <div class="card-header">
                 <i class="fas fa-table mr-1"></i>
-                DataTable Example
+                Data Barang
               </div>
+              <?php include 'data_chart.php';?>
 
-              <!-- buttton tambah data -->
-              <div>
-                <button class="button btn-primary m-3"><i class="fas fa-plus-circle"></i> Tambah Data</button>
-              </div>
-              <!-- Akhir buttton tambah data -->
-              <div class="card-body">
-                <div class="table-responsive">
-                  <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                    <thead>
-                      <tr>
-                        <th>No</th>
-                        <th>Position</th>
-                        <th>Office</th>
-                        <th>Age</th>
-                        <th>Start date</th>
-                        <th>Aksi</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>1</td>
-                        <td>System Architect</td>
-                        <td>Edinburgh</td>
-                        <td>61</td>
-                        <td>2011/04/25</td>
-                        <td>
-                          <a href="#">
-                            <span class="actionCust"> <i class="far fa-edit"></i> </span
-                          ></a>
-                          <a href="#">
-                            <span class="actionCust"> <i class="far fa-trash-alt"></i> </span
-                          ></a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
             </div>
             <!-- Akhir Tabels -->
           </div>
