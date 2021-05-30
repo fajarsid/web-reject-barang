@@ -39,7 +39,7 @@
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                 <div class="sb-sidenav-menu">
                     <div class="nav">
-                        <a class="nav-link" href="index.html">
+                        <a class="nav-link" href="index.php">
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             Dashboard
                         </a>
@@ -161,7 +161,7 @@
     </script>
 </body>
 
-<!-- TInggal disesuaikan -->
+
 <!-- The Modal -->
 <div class="modal fade" id="myModal">
     <div class="modal-dialog">
@@ -175,13 +175,24 @@
             <!-- Modal body -->
             <form method="post">
                 <div class="modal-body">
-                    <input type="text" name="namabarang" placeholder="Nama Barang" class="form-control" required />
+                    <input type="text" name="hasil" placeholder="Hasil Produksi" class="form-control" required />
                     <br />
-                    <input type="text" name="ket" placeholder="Keterangan Barang" class="form-control" required />
+                    <input type="text" name="qc" placeholder="Quality Control" class="form-control" required />
                     <br />
-                    <input type="number" name="stock" placeholder="stock" class="form-control" required />
+                    <input type="text" name="good" placeholder="Good Quality" class="form-control" required />
                     <br />
-                    <input type="date" name="expired" class="form-control" required />
+                    <input type="text" name="reject" placeholder="Barang Reject" class="form-control" required />
+                    <br />
+                    <select name="jenis" class="form-control">
+                        <option value="">- Jenis Reject -</option>
+                        <option value="jahit">Jahitan Tidak Rapi</option>
+                        <option value="sobek">Bahan Sobek</option>
+                        <option value="jahit">Jahitan Tidak Rapi</option>
+                        <option value="jahit">Jahitan Tidak Rapi</option>
+                        <option value="jahit">Jahitan Tidak Rapi</option>
+                    </select>
+                    <br>
+                    <input type="date" name="tgl" class="form-control" required />
                     <br />
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
