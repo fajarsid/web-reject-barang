@@ -168,7 +168,9 @@
     </div>
     <!-- buttton tambah data -->
     <div>
-        <button class="button btn-primary m-3"><i class="fas fa-download"></i> Export Data</button>
+    <a href="exportdata.php?id=ExportData" target="_blank" class="btn btn-dark "><i
+                                    class="fas fa-download"></i> Export Data</a>
+        <!-- <button class="button btn-primary m-3"><i class="fas fa-download"></i> Export Data</button> -->
     </div>
     <!-- Akhir buttton tambah data -->
    
